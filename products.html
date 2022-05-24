@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home || Comfy Store</title>
+    <title>Products || Comfy Store</title>
     <!-- normalize  -->
     <link rel="stylesheet" href="./css/normalize.css" />
     <!-- font awesome -->
@@ -17,7 +17,7 @@
   </head>
   <body>
     <!-- navbar -->
-    <nav class="navbar">
+    <nav class="navbar page">
       <div class="nav-center">
         <!-- links -->
         <div>
@@ -37,35 +37,55 @@
           </ul>
         </div>
         <!-- logo -->
-        <img src="./assets/logo-white.svg" class="nav-logo" alt="logo" />
+        <img src="./assets/logo-black.svg" class="nav-logo" alt="logo" />
         <!-- cart icon -->
         <div class="toggle-container">
           <button class="toggle-cart">
             <i class="fas fa-shopping-cart"></i>
           </button>
-          <span class="cart-item-count">2</span>
+          <span class="cart-item-count">1</span>
         </div>
       </div>
     </nav>
-    <!-- hero -->
-    <section class="hero">
-      <div class="hero-container">
-        <h1 class="text-slanted">rest, relax, unwind</h1>
-        <h3 class="text-slanted">embrace your choices - we do</h3>
-        <a href="./products.html" class="btn hero-btn text-slanted">
-          shop now
-        </a>
+    <!-- end of navbar-->
+    <!-- page hero -->
+    <section class="page-hero">
+      <div class="section-center">
+        <h3 class="page-hero-title">Home / Products</h3>
       </div>
     </section>
-
-    <!-- featured products -->
-    <section class="section featured">
-      <div class="title">
-        <span></span>
-        <h2>featured</h2>
-        <span></span>
+    <!-- products -->
+    <section class="products">
+      <!-- filters -->
+      <div class="filters">
+        <div class="filters-container">
+          <!-- search -->
+          <form class="input-form">
+            <input type="text" class="search-input" placeholder="search..." />
+          </form>
+          <!-- categories -->
+          <h5>Company</h5>
+          <article class="companies">
+            <button class="company-btn">all</button>
+            <button class="company-btn">ikea</button>
+            <button class="company-btn">marcos</button>
+          </article>
+          <!-- price -->
+          <h5>Price</h5>
+          <form class="price-form">
+            <input
+              type="range"
+              class="price-filter"
+              min="0"
+              value="50"
+              max="100"
+            />
+          </form>
+          <span class="price-value">Value : $80</span>
+        </div>
       </div>
-      <div class="section-center featured-center">
+      <!-- products -->
+      <div class="products-container">
         <!-- single product -->
         <article class="product">
           <div class="product-container">
@@ -127,7 +147,79 @@
               <a href="single-product.html" class="product-icon">
                 <i class="fas fa-search"></i>
               </a>
-              <button class="product-cart-btn product-icon">
+              <button class="product-cart-btn product-icon" data-id="1">
+                <i class="fas fa-shopping-cart"></i>
+              </button>
+            </div>
+          </div>
+          <footer>
+            <h5 class="product-name">entertainment center</h5>
+            <span class="product-price">$9.99</span>
+          </footer>
+        </article>
+        <!-- end of single product -->
+        <!-- single product -->
+        <article class="product">
+          <div class="product-container">
+            <img
+              src="https://dl.airtable.com/.attachments/14ac9e946e1a02eb9ce7d632c83f742f/4fd98e64/product-1.jpeg"
+              class="product-img img"
+              alt=""
+            />
+
+            <div class="product-icons">
+              <a href="single-product.html" class="product-icon">
+                <i class="fas fa-search"></i>
+              </a>
+              <button class="product-cart-btn product-icon" data-id="1">
+                <i class="fas fa-shopping-cart"></i>
+              </button>
+            </div>
+          </div>
+          <footer>
+            <h5 class="product-name">high-back bench</h5>
+            <span class="product-price">$9.99</span>
+          </footer>
+        </article>
+        <!-- end of single product -->
+        <!-- single product -->
+        <article class="product">
+          <div class="product-container">
+            <img
+              src="https://dl.airtable.com/.attachments/3245c726ee77d73702ba8c3310639727/f000842b/product-5.jpg"
+              class="product-img img"
+              alt=""
+            />
+
+            <div class="product-icons">
+              <a href="single-product.html" class="product-icon">
+                <i class="fas fa-search"></i>
+              </a>
+              <button class="product-cart-btn product-icon" data-id="1">
+                <i class="fas fa-shopping-cart"></i>
+              </button>
+            </div>
+          </div>
+          <footer>
+            <h5 class="product-name">leather sofa</h5>
+            <span class="product-price">$9.99</span>
+          </footer>
+        </article>
+        <!-- end of single product -->
+        <!-- single product -->
+        <article class="product">
+          <div class="product-container">
+            <img
+              src="https://dl.airtable.com/.attachments/da5e17fd71f50578d525dd5f596e407e/d5e88ac8/product-2.jpg"
+              class="product-img img"
+              alt=""
+            />
+
+            <div class="product-icons">
+              <a href="single-product.html" class="product-icon">
+                <i class="fas fa-search"></i>
+              </a>
+              <button class="product-cart-btn product-icon" data-id="1">
                 <i class="fas fa-shopping-cart"></i>
               </button>
             </div>
@@ -139,39 +231,7 @@
         </article>
         <!-- end of single product -->
       </div>
-      <a href="products.html" class="btn"> all products </a>
     </section>
-    <!-- sidebar -->
-    <div class="sidebar-overlay">
-      <aside class="sidebar">
-        <!-- close -->
-        <button class="sidebar-close">
-          <i class="fas fa-times"></i>
-        </button>
-        <!-- links -->
-        <ul class="sidebar-links">
-          <li>
-            <a href="index.html" class="sidebar-link">
-              <i class="fas fa-home fa-fw"></i>
-              home
-            </a>
-          </li>
-          <li>
-            <a href="products.html" class="sidebar-link">
-              <i class="fas fa-couch fa-fw"></i>
-              products
-            </a>
-          </li>
-          <li>
-            <a href="about.html" class="sidebar-link">
-              <i class="fas fa-book fa-fw"></i>
-              about
-            </a>
-          </li>
-        </ul>
-      </aside>
-    </div>
-
     <!-- sidebar -->
     <div class="sidebar-overlay">
       <aside class="sidebar">
